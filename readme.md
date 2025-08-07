@@ -1,1 +1,1 @@
-This repository contains Python implementations of methods I learnt in UMC 202.
+This repository contains Python implementations of concepts learnt in UMC202/DS288 Numerical Methods.
