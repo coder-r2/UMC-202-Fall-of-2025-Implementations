@@ -7,11 +7,11 @@ def bisection_method(func, a:float, b:float, error:float):
     b: upper bound of the interval
     error: acceptable error margin for the root estimate
     """
-    
+
     try:
         assert func(b)*func(a) < 0
     except AssertionError:
-        return "No roots eroot_estimateist in given bounds."
+        return "No roots exist in given bounds."
     
     iteration = 1
     root_estimate = (a+b)/2
