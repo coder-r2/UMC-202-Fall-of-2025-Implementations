@@ -15,5 +15,12 @@ def regula_falsi_method(a:float, b:float, func, error:float):
 
         root_estimate = (a*func(b) - b*func(a)) / (func(b) - func(a))
         iteration += 1
-
+    
+    print(f"Number of iterations: {iteration}")
     return root_estimate
+
+def main():
+    print(regula_falsi_method(0, 1.3, lambda x: x**10 - 1, 0.001))
+
+if __name__ == "__main__":
+    main()

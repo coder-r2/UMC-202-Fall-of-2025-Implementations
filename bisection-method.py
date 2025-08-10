@@ -35,7 +35,7 @@ def bisection_method(func, a:float, b:float, error:float):
         return root_estimate
 
 def main():
-    print(bisection_method(lambda x: x**3 + x -4, 1, 4, 0.001))
+    print(bisection_method(lambda x: x**10 - 1, 0, 1.3, 0.001))
 
 if __name__ == "__main__":
     main()
