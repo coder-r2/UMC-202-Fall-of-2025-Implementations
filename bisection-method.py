@@ -1,11 +1,15 @@
 def bisection_method(func, a:float, b:float, error:float):
     """
     Bisection method for finding roots of a function.
+
     Parameters:
     func: function for which the root is to be found
     a: lower bound of the interval
     b: upper bound of the interval
     error: acceptable error margin for the root estimate
+    
+    Returns:
+    The estimated root of the function.
     """
 
     try:

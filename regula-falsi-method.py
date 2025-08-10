@@ -1,4 +1,17 @@
 def regula_falsi_method(a:float, b:float, func, error:float):
+    """
+    Regula Falsi method for finding roots of a function.
+
+    Parameters:
+    a: lower bound of the interval
+    b: upper bound of the interval
+    func: function for which the root is to be found
+    error: acceptable error margin for the root estimate
+    
+    Returns:
+    The estimated root of the function.
+    """
+
     try:
         assert func(b)*func(a) < 0
     except AssertionError:
